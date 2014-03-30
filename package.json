@@ -1,0 +1,19 @@
+{
+  "name": "maclabService",
+  "version": "0.0.0",
+  "description": "API service for maclab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kcliu/maclabService.git"
+  },
+  "author": "kcliu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kcliu/maclabService/issues"
+  },
+  "homepage": "https://github.com/kcliu/maclabService"
+}
