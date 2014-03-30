@@ -21,7 +21,8 @@
     "q": "~1.0.1",
     "rethinkdb": "~1.12.0-0",
     "debug": "~0.7.4",
-    "mysql": "~2.1.1"
+    "mysql": "~2.1.1",
+    "express": "~3.5.1"
   },
   "devDependencies": {
     "coffee-script": "~1.7.1",
