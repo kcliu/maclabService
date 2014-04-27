@@ -32,18 +32,14 @@ app.get '/sensors', (req, res) ->
 app.post '/sensors', (req, res) ->
   content = req.body
 
-  sensors.insert content.type content, (err, result) ->
+  sensors.insert content.type, content, (err, result) ->
     if err
       res.json 405, {errorcode: 405, message: err.message}
     else
       if result.generated_keys?
-        timeline.get {id: result.generated_keys[0]}, (err, result) ->
-          if err
-            res.json 404, {errorcode: 404, message: err.message}
-          else
-            res.json result
+        res.json result
       else
-          res.json {message: 'insert failed...'}
+        res.json {message: 'insert failed...'}
 #start server
 
 exports.start = () ->
